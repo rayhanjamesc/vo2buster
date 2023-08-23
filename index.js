@@ -4,12 +4,12 @@ let result = document.getElementById("result");
 
 function calculateMeter() {
     let distanceMeter = parseFloat(document.getElementById("distanceMeter").value);
-    result.innerHTML = (distanceMeter - 504.9) / 44.73;
+    result.innerHTML = ((distanceMeter - 504.9) / 44.73) + " mL/kg/min";
 };
 
 function calculateMiles() {
     let distanceMiles = parseFloat(document.getElementById("distanceMiles").value);
-    result.innerHTML = (35.97 * distanceMiles) - 11.29;
+    result.innerHTML = ((35.97 * distanceMiles) - 11.29) + " mL/kg/min";
 };
 
 function categorize() {

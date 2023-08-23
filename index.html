@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="A webpage for Dustland players to count their VO2 Max score">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>VO2 Buster</title>
+        <link rel="icon" type="image/x-icon" href="BUSTER_head.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head> 
+    <body>
+        <main>
+            <!--TODO: CATEGORIZE BASED ON GROUPS
+            <div class="gender-input">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" id="male" required>Male</input>
+                <input type="radio" name="gender" value="female" id="female">Female</input>
+            </div>
+            <div class="age-input">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required>
+            </div>-->
+            <div class="meter-input">
+                <label for="distanceMeter" class="label">Distance (in meters)</label>
+                <input type="number" name="distanceMeter" id="distanceMeter" required>
+                <button id="calculateMeter" onclick="calculateMeter()">Calculate</button>
+            </div>
+            <div class="miles-input">
+                <label for="distanceMiles" class="label">Distance (in miles)</label>
+                <input type="number" name="distanceMiles" id="distanceMiles" required>
+                <button id="calculateMiles" onclick="calculateMiles()">Calculate</button>
+            </div>
+            <p id="result"></p>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

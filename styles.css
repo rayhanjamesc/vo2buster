@@ -184,3 +184,59 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media (max-width: 1300px) {
+    #buster {
+        top: 30%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #buster {
+        top: 40%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #buster {
+        top: 50%;
+    }
+
+    main {
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    #buster {
+        top: 60%;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    #buster {
+        top: 70%;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .cat-input {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .gender-input, .age-input, .meter-input, .miles-input, #result {
+        margin: 10px 0;
+    }
+
+    #category {
+        margin-top: 10px;
+    }
+}

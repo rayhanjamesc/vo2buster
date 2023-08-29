@@ -12,28 +12,34 @@
     </head> 
     <body>
         <main>
-            <!--TODO: CATEGORIZE BASED ON GROUPS
-            <div class="gender-input">
-                <label for="gender">Gender</label>
-                <input type="radio" name="gender" value="male" id="male" required>Male</input>
-                <input type="radio" name="gender" value="female" id="female">Female</input>
+            <div class="cat-input">
+                <div class="gender-input">
+                    <label for="gender" id="gen-lab">Gender</label>
+                    <input type="radio" name="gender" value="male" id="male" required>Male</input>
+                    <input type="radio" name="gender" value="female" id="female">Female</input>
+                </div>
+                <div class="age-input">
+                    <label for="age" id="age-lab">Age</label>
+                    <input type="number" name="age" id="age" required>
+                </div>
             </div>
-            <div class="age-input">
-                <label for="age">Age</label>
-                <input type="number" name="age" id="age" required>
-            </div>-->
-            <div class="meter-input">
-                <label for="distanceMeter" class="label">Distance (in meters)</label>
-                <input type="number" name="distanceMeter" id="distanceMeter" required>
-                <button id="calculateMeter" onclick="calculateMeter()">Calculate</button>
-            </div>
-            <div class="miles-input">
-                <label for="distanceMiles" class="label">Distance (in miles)</label>
-                <input type="number" name="distanceMiles" id="distanceMiles" required>
-                <button id="calculateMiles" onclick="calculateMiles()">Calculate</button>
+            <div class="distance-input">
+                <div class="meter-input">
+                    <label for="distanceMeter" class="label">Distance (in meters)</label>
+                    <input type="number" name="distanceMeter" id="distanceMeter" required>
+                    <button id="calculateMeter" onclick="calculateMeter()">Calculate</button>
+                </div>
+                <div class="miles-input">
+                    <label for="distanceMiles" class="label">Distance (in miles)</label>
+                    <input type="number" name="distanceMiles" id="distanceMiles" required>
+                    <button id="calculateMiles" onclick="calculateMiles()">Calculate</button>
+                </div>
             </div>
             <p id="result"></p>
+            <p id="category"><p>
         </main>
+        <img src="VO2 Buster (Male).png" class="malevo2" id="men">
+        <img src="VO2 Buster (Female).png" class="malevo2" id="women">
         <script src="index.js"></script>
     </body>
 </html>

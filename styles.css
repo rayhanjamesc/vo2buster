@@ -17,18 +17,62 @@ body {
     background-image: url("Background.png");
     font-family: 'space mono', monospace;
     font-size: 1.7rem;
+    z-index: 1;
+    text-align: center;
 }
 
 main {
-    background-color: var(--misc-color);
-    width: 35vw;
+    background-color: var(--misc-color-fade);
+    width: 45vw;
     display: block;
-    padding-top: 20px;
-    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     border: 3px solid var(--background-color);
     border-radius: 40px;
+    z-index: -10;
+    text-align: center;
+}
+
+.cat-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gen-lab {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.gender-input {
+    margin: 0 30px;
+}
+
+.age-input {
+    margin: 10px 13px;
+}
+
+#age-lab {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#age {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.distance-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .meter-input, .miles-input, #result {
@@ -39,7 +83,8 @@ main {
 }
 
 .meter-input, .miles-input {
-    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .label {
@@ -63,4 +108,35 @@ main {
 #calculateMeter:hover, #calculateMiles:hover {
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+.malevo2 {
+    position: fixed;
+    margin-top: 40px;
+    top: 46%;
+    left: 12%;
+    width: 75vw;
+    border-radius: 40px;
+    border: 3px solid var(--background-color);
+}
+
+#men, #women {
+    opacity: 0;
+}
+
+#result {
+    margin-bottom: 20px;
+}
+
+#category {
+    margin-top: 15px;
+    border: none;
+    border-radius: 40px;
+    color: var(--text-color);
+    padding: 5px;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

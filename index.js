@@ -195,3 +195,12 @@ function calculateMiles() {
         result.innerHTML = "Please choose a gender"
     }
 };
+
+function removeTutorial() {
+    let tutorialbg = document.getElementById("bg-blur");
+    tutorialbg.remove();
+    let tutorial = document.getElementById("tutorial");
+    tutorial.remove();
+    let buster = document.getElementById("buster");
+    buster.remove();
+}

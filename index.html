@@ -12,6 +12,14 @@
     </head> 
     <body>
         <main>
+            <div id="tutorial" onclick="removeTutorial()">
+                <p>To begin, run for 12 minutes and calculate the distance (in meters or miles). You will then choose a 
+                    gender, age and input your distance to receive your score.
+                </p>
+                <button id="close-tutorial" onclick="removeTutorial()">I understand</button>
+            </div>
+            <img src="BUSTER_bored-bored.png" id="buster" onclick="removeTutorial()">
+            <img src="Background_blur.png" id="bg-blur" onclick="removeTutorial()">
             <div class="cat-input">
                 <div class="gender-input">
                     <label for="gender" id="gen-lab">Gender</label>

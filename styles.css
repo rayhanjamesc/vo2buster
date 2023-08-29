@@ -14,11 +14,16 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("Background.png");
     font-family: 'space mono', monospace;
     font-size: 1.7rem;
     z-index: 1;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #bg-blur {
